@@ -48,13 +48,73 @@ nav ul a:hover {
 
 #banner {
     background-color: darkblue;
+    background-image: url(images/van_dragt_102517_0032_how_to_choose_batteries.jpg);
+    background-size: cover;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    font-size: 4em;
+	color: #fff;
 }
+
+#banner h2, #banner p {
+	margin: 0;
+    text-shadow: 0 0 20px #000;
+}
+
+#banner > div {
+	position: relative;
+	left: 120px;
+	top: 120px;
+}
+
+
 
 #ess {
     background-color: lightblue;
-    background-image: url();
-	background-size: cover;
+
 }
+
+#ess ul {
+	list-style: none;
+	margin: 0;
+    padding: 0;
+    display: flex;
+	justify-content: center;
+}
+
+.card {
+	width: 400px;
+	margin: 1em;
+	background-color: #eee;
+}
+
+.card img {
+	width: 100%;
+}
+
+#ess button {
+    display: flex;
+    justify-content: center;
+	width: auto;
+	font-size: 1em;
+	margin: 1em 0;
+	align-self: flex-end;
+	padding: 0.5em 1em;
+	background-color:rgb(127, 86, 241);
+	color: #fff;
+	border: none;
+}
+
+
+#history > div {
+	background-color:rgba(255, 255, 255, 0.44);
+	padding: 1em;
+	width: 75%;
+	max-width: 700px;
+}
+
+
 
 #history{
     background-color: blue;
@@ -62,10 +122,30 @@ nav ul a:hover {
 	background-size: cover;
 }
 
+
+
 #uses {
     background-color: lightblue;
+    display: flex;
+	color: #fff;
     background-image: url();
 	background-size: cover;
+}
+
+#uses > div {
+	display: flex;
+	justify-content: center;
+	width: 75%;
+	margin: auto;
+}
+
+#uses > div > div:nth-child(1) {
+	flex: 3;
+	margin: 0 2em 0 0;
+}
+
+#uses > div > div:nth-child(2) {
+	flex: 2;
 }
 
 #tech {
@@ -77,5 +157,58 @@ nav ul a:hover {
 #contact {
     background-color:turquoise;
     background-image: url();
-	background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+label {
+    margin: 1em 0;
+}
+
+label span {
+    margin: 1em, 0;
+}
+
+input, textarea {
+    border: 1px solid #000;
+    padding: 0.5em;
+    margin: 0 2em 0 0;
+    width: 20em;
+    font-size: 1em;
+}
+
+#contact label{
+	display: flex;
+	flex-direction: column;
+}
+
+input, textarea {
+	border: 1px solid #000;
+	padding: 0.5em;
+	margin: 0 2em 0 0;
+	width: 20em;
+	font-size: 1em;
+}
+
+textarea {
+	height: 9em;
+	margin: 0 0 0 0;
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+	width: auto;
+	font-size: 1em;
+	margin: 1em 0;
+	align-self: flex-end;
+	padding: 0.5em 1em;
+	background-color:rgb(0, 0, 0);
+	color: #fff;
+	border: none;
 }
