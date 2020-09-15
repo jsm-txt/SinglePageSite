@@ -29,7 +29,7 @@ nav h1, ul {
 }
 
 nav a {
-    text-decoration: none;
+	text-decoration: none;
     color: #eee;
 }
 
@@ -53,7 +53,7 @@ nav ul a:hover {
     display: flex;
 	justify-content: center;
     align-items: center;
-    font-size: 4em;
+    font-size: 3em;
 	color: #fff;
 }
 
@@ -63,16 +63,20 @@ nav ul a:hover {
 }
 
 #banner > div {
-	position: relative;
-	left: 120px;
-	top: 120px;
+	margin: 0 auto 0 auto;
 }
 
 
 
 #ess {
-    background-color: lightblue;
+	background-color: rgb(0, 43, 83);
 
+}
+#ess h2{
+	font-size: 2.5em;
+	display: flex;
+	justify-content: center;
+	color: white;
 }
 
 #ess ul {
@@ -81,30 +85,53 @@ nav ul a:hover {
     padding: 0;
     display: flex;
 	justify-content: center;
+	
 }
 
 .card {
 	width: 400px;
 	margin: 1em;
-	background-color: #eee;
+	background-color: rgb(228, 214, 214);
+	display:flex;
+	flex-direction: column;
 }
 
+.card h3{
+	margin: 1em;
+}
+.card p{
+	margin: 1em;
+	
+}
 .card img {
 	width: 100%;
 }
 
-#ess button {
-    display: flex;
-    justify-content: center;
-	width: auto;
-	font-size: 1em;
-	margin: 1em 0;
-	align-self: flex-end;
+
+.card-p {
+	min-height: 150px;
+}
+.card button {
+	width: 200px;
+	font-size: .8em;
 	padding: 0.5em 1em;
-	background-color:rgb(127, 86, 241);
 	color: #fff;
 	border: none;
+	border-radius: 100px;
+	display: flex;
+	margin: 2px auto 10px auto;
+	justify-content: center;
+	align-items: flex-end;
 }
+ #red{
+	 background-color: rgb(143, 0, 0);
+ }
+ #blue{
+	 background-color: rgba(0, 45, 182, 0.795);
+ }
+ #green{
+	 background-color: rgb(69, 173, 8);
+ }
 
 
 #history > div {
@@ -118,34 +145,38 @@ nav ul a:hover {
 
 #history{
     background-color: blue;
-    background-image: url();
+    background-image: url(images/super-landscape-and-a-big-waterfall-1280x720_785754-mm-90.jpg);
 	background-size: cover;
 }
 
 
 
 #uses {
-    background-color: lightblue;
-    display: flex;
-	color: #fff;
+    background-color: rgb(0, 60, 80);
+	color: rgb(0, 0, 0);
     background-image: url();
 	background-size: cover;
 }
 
-#uses > div {
+#uses h2{
+	font-size: 2em;
 	display: flex;
 	justify-content: center;
-	width: 75%;
-	margin: auto;
+	color: white;
+	
 }
 
-#uses > div > div:nth-child(1) {
-	flex: 3;
-	margin: 0 2em 0 0;
+#uses ul{
+	list-style: none;
+	margin: 0;
+    padding: 0;
+    display: flex;
+	justify-content: space-around;
+	
 }
 
-#uses > div > div:nth-child(2) {
-	flex: 2;
+.card-a {
+	min-height: 300px;
 }
 
 #tech {
@@ -159,20 +190,22 @@ nav ul a:hover {
     background-image: url();
     background-size: cover;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-
-
-
-label {
-    margin: 1em 0;
+#contact h2{
+font-size: 3em;
+margin: 2em ;
 }
 
 label span {
     margin: 1em, 0;
 }
+
+
 
 input, textarea {
     border: 1px solid #000;

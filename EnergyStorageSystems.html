@@ -4,6 +4,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Energy Storage Systems</title>
 </head>
 
@@ -27,7 +28,7 @@
 
     <section id="banner">
 
-      <div> 
+      <div data-aos="fade-up">
           <h1>Energy Storage Systems</h1><br>
         <p>The Future of Energy</p>
         </div>
@@ -36,30 +37,34 @@
 
 
     <section id="ess">
-      <header>
+    
         <h2>Energy Storage Comes In many Sizes</h2>
-      </header>
+      
 
       <ul>
-      <li class="card">
+      <li class="card" data-aos="fade-right">
         <img src="images/1575025783_Apple-iPhone-X-charging-768.jpg" >
         <h3>Convinience</h3>
-        <p>A battery in a phone can hold lots of energy! Imagine if you could only use a phone when plugged in</p>
-        <button>Click for more info</button>
+        <p class="card-p">A battery in a phone can hold lots of energy! Without batteries our
+          our lives would be vastly different. Imagine if you could not make it to your zoom class
+          simply because batteries didn't exist!</p>
+        <button id="red">Click for more info</button>
       </li>
     
-      <li class="card">
+      <li class="card" data-aos="fade-up">
         <img src="images/Unknown.jpeg">
         <h3>Daily Uses</h3>
-        <p>Buildings heat up water in a water heater to keep it hot for when needed. Without it we would only have cold water for washing our hands yikes!</p>
-        <button>Click for more info</button>
+        <p class="card-p">Buildings heat up water in a water heater to keep it hot for when needed. Many people
+          take hot water for granted Without it we would only have cold water for washing our hands yikes!</p>
+        <button id="blue">Click for more info</button>
       </li>
     
-      <li class="card">
+      <li class="card"  data-aos="fade-left">
           <img src="images/clean-energy-future-copy-1280x720.jpg">
           <h3>Clean Energy</h3>
-          <p>When combined with energy renewables, energy storage systems can boost the availabily of energy and boost efficiency.</p>
-          <button>Click for more info</button>
+          <p class="card-p"> Renewables are in demand but aren't dependable due to changing enviernments. Storing energy can fix that.
+            When combined with energy renewables, energy storage systems can boost the availabily of energy and boost efficiency.</p>
+          <button id="green">Click for more info</button>
       </li>
       </ul>
     </section>
@@ -68,61 +73,66 @@
     
     <section id="history">
       
-      <div>
-      <header>
+      <div data-aos="fade-up-right">
+      
         <h2>History of Energy Storage</h2>
         <h3>Since the dawn of civilizaiton</h3>
-      </header>
+      
 
       <p>
-          Energy storage has been around for as long as we know. People would store water in certain places to keep it cold.
-      </p>
+          Energy storage has been around for as long as we know. People would store water 
+          underground to keep it at constant temperature. The modern electirc battery was also a mistake.
+          It was claimed to produce energy forever at super low voltages of course.
+          Captering energy and storing it has also been very closely tied when researching 
+          renewable resources. Energy storeage has evolved over the years to capture mlre energy 
+          in the smallest area possible. The transporatation of energy is also vital now 
+          for current technologies as electric cars are pushing the limits on distance. 
+          Damns  for example store enegy by preventing water from slowing. This is also a type 
+          of storage. Energy is all around us, without storage however our lives would obviously different.
      </div>
     </section>
 
 
     <section id="uses">
       <div>
-      <header>
-        <h2>Energy Strage and their types</h2>
-      </header>
-
-
+      
+        <h2 data-aos="zoom-in-up">Energy Storage and their types</h2>
+      
       <ul>
-        <li class="card">
+        <li class="card" data-aos="zoom-in-right">
             <img src="">
             <h3> Mechanical Energy</h3>
-            <p>
+            <p class="card-a">
                 Mechanical Energy is stored in kenitic energy such as a flywheel 
                 and allows for easy transfer of mechanical energy.
             </p>
           
         </li>
 
-        <li class="card">
+        <li class="card" data-aos="zoom-in">
             <img src="">
             <h3>Chemical Energy</h3>
-            <p>
+            <p class="card-a">
                 Chemical energy is energy stores in chemical reaction 
                 that release electrical energy 
             </p>
           
         </li>
 
-        <li class="card">
+        <li class="card" data-aos="zoom-in">
             <img src="">
             <h3> Thermal Energy</h3>
-            <p>
+            <p class="card-a">
                 Thermal energy is energy from temperature difference in materials. 
                 Such as hot air or water that is then used transfer energy.
             </p>
           
         </li>
 
-        <li class="card">
+        <li class="card" data-aos="zoom-in-left"> 
             <img src="">
             <h3> Other types not discussed</h3>
-            <p>
+            <p class="card-a">
                 Hydropump storage is used when energy is stored in potenti
                 gravitational energy. 
                 Such as moving water to elevated 
@@ -153,7 +163,7 @@
     </section>
 
     <footer id="contact">
-      <h2> Contact for more information!</h2>
+      <h2> Contact me for more information!</h2>
         <form>
             <label>
                 Name
@@ -176,5 +186,11 @@
     
   </main>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+<script>
+  // Initialize Animate On Scroll
+  AOS.init();
+</script>
 
 </html>
