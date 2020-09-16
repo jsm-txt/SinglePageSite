@@ -181,12 +181,24 @@ nav ul a:hover {
 
 #tech {
     background-color:  navy;
-    background-image: url();
+    background-image: url(images/AN2U4823-580x358.jpg);
 	background-size: cover;
+	color: Black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#tech > div {
+	background-color:rgba(255, 255, 255, 0.726);
+	padding: 1em;
+	width: 75%;
+	max-width: 700px;
 }
 
 #contact {
-    background-color:turquoise;
+    background-color:rgb(43, 24, 124);
     background-image: url();
     background-size: cover;
     min-height: 100vh;
@@ -194,6 +206,7 @@ nav ul a:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	color: white;
 }
 
 #contact h2{
